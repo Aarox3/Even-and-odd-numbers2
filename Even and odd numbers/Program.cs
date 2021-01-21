@@ -14,36 +14,32 @@ namespace Even_and_odd_numbers
             while (true)
             {
 
-         
-            try 
-            { 
-                
-                Console.WriteLine("Wprowadź proszę dowolną liczbę. Program poda komunikat, czy jest to liczba parzysta bądź nieparzysta.");
+                try
+                {
 
-                int userNumber = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Wprowadź proszę dowolną liczbę. Program poda komunikat, czy jest to liczba parzysta bądź nieparzysta.");
 
+                    int userNumber = int.Parse(Console.ReadLine());
 
-
-                 if (userNumber%2==0)
-                     {
+                    if (userNumber % 2 == 0)
+                    {
                         Console.WriteLine("Liczba " + userNumber + " jest parzysta.");
-                     }
+                    }
 
-                 if (userNumber%2==1)
-                     {
-                         Console.WriteLine("Liczba " + userNumber + " jest nieparzysta.");
-                     }
+                    else
+                    {
+                        Console.WriteLine("Liczba " + userNumber + " jest nieparzysta.");
+                    }
                     break;
-            }
-                
-                                 
-            catch (Exception ex)
+                }
+
+                catch (Exception ex)
                 {
                     Console.WriteLine("Podana wartość jest niewłaściwa!");
                 }
-                
+
             }
         }
-        }
-        }
-   
+    }
+}
+
